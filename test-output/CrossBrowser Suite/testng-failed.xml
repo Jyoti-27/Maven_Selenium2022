@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowser Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="testNG_Learning.CrossBrowserDemo">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNG_Learning.CrossBrowserDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="testNG_Learning.CrossBrowserDemo">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="tearDown"/>
+          <include name="assignLeave" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG_Learning.CrossBrowserDemo -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [CrossBrowser Suite] -->

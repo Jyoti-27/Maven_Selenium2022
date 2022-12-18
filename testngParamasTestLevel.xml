@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	 
+	<test thread-count="5" name="Test">
+		 
+		<parameter name="userid" value="Admin"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+		   
+		<classes>
+			     
+			<class name="testNG_Learning.testNGExample" />
+			      
+   
+		</classes>
+		 
+	</test> <!-- Test -->
+	 
+	<test thread-count="5" name="Testbasic">
+		 
+		<parameter name="userid" value="sidheshwar"></parameter>
+		 
+		<parameter name="password" value="pass"></parameter>
+		   
+		<classes>
+			     
+			<class name="testNG_Learning.TestNGDemo" />
+			   
+		</classes>
+		 
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
